@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Basic table styling for readability */
+.responsive-table {
+    width: 100%; /* Ensures the table can fill its container */
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.responsive-table th, 
+.responsive-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap; /* Prevents text from wrapping in cells */
+}
+
+.responsive-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Zebra-striping for better readability on desktop */
+.responsive-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Horizontal scrolling for the table container on small screens */
+.responsive-table-container {
+    overflow-x: auto;
+    border: 1px solid #ccc; /* Optional border to indicate scrollability */
+}
+
+/* Make the headers sticky on small screens for easy navigation */
+@media screen and (max-width: 600px) {
+    .responsive-table thead {
+        /* This hides the header row on small screens */
+        display: none;
+    }
+
+    /* Use data attributes to display headers as labels on small screens */
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #333;
+    }
+
+    .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+        display: block; /* Stacks table elements */
+    }
+    
+    .responsive-table tr {
+        margin-bottom: 15px; /* Space between "rows" */
+        border: 1px solid #ccc;
+    }
+}
