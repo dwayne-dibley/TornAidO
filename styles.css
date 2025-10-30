@@ -8,7 +8,12 @@
     width: 10%;
     min-width: 600px;
     border-collapse: collapse;
-    font-size: 32px; /* Larger font for mobile */
+  }
+
+  @media screen and (max-width: 768px) {
+    .responsive-table {
+      font-size: 64px; /* Larger font for mobile */
+    }
   }
 
   .responsive-table th,
@@ -36,6 +41,7 @@
   }
 
   </style>
+
 
 
 
