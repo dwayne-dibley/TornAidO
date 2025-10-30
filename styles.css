@@ -1,12 +1,11 @@
 <style>
   .table-container {
-    width: 10%;
+    width: 100%;
     overflow-x: auto;
   }
 
   .responsive-table {
-    width: 100%;
-    min-width: 600px;
+    width: 10%;
     border-collapse: collapse;
   }
 
@@ -36,6 +35,7 @@
   }
 
   </style>
+
 
 
 
