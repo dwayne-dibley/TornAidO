@@ -34,4 +34,11 @@
     z-index: 2; /* Ensures it stays above other content when scrolling */
   }
 
+  @media screen and (max-width: 768px) {
+    .responsive-table,
+    .responsive-table td,
+    .responsive-table th {
+    font-size: 16px; /* Larger font for mobile */
+  }
+
   </style>
