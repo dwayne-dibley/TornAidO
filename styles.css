@@ -1,46 +1,37 @@
-/* General table styling */
-.responsive-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Header row styling */
-.responsive-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
-}
-
-/* Table cell and header styling */
-.responsive-table th, 
-.responsive-table td {
-  padding: 12px 15px;
-  border: 1px solid #dddddd;
-}
-
-/* Alternating row colors for better readability */
-.responsive-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-/* Highlight row on hover */
-.responsive-table tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-  .responsive-table, 
-  .responsive-table td, 
-  .responsive-table th {
-    font-size: 16px; /* Larger font for mobile */
+<style>
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
   }
 
-  /* Adjust padding and alignment for smaller screens */
-  .responsive-table th, 
+  .responsive-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+  }
+
+  .responsive-table th,
   .responsive-table td {
-    padding: 8px 10px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: left;
   }
-}
+
+  .responsive-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 3;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Sticky first column */
+  .responsive-table th:first-child,
+  .responsive-table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f2f2f2; /* Optional: for visual distinction */
+    z-index: 2; /* Ensures it stays above other content when scrolling */
+  }
+
+  </style>
