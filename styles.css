@@ -38,8 +38,10 @@
     .responsive-table,
     .responsive-table td,
     .responsive-table th {
-      font-size: 16px; /* Larger font for mobile */
+      font-size: 32px; /* Larger font for mobile */
+    }
   }
 
 
   </style>
+
