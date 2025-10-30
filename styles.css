@@ -15,6 +15,7 @@
     padding: 12px 15px;
     border: 1px solid #ccc;
     text-align: left;
+    font-size: 32px; /* Larger font for mobile */
   }
 
   .responsive-table thead th {
@@ -34,13 +35,7 @@
     z-index: 2; /* Ensures it stays above other content when scrolling */
   }
 
-  .responsive-table,
-  .responsive-table td,
-  .responsive-table th {
-      font-size: 32px; /* Larger font for mobile */
-  }
-
-
   </style>
+
 
 
