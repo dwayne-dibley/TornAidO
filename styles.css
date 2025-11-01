@@ -36,12 +36,13 @@
 
   @media screen and (max-width: 768px) {
     .responsive-table {
-      background-color: lightgreen
+      background-color: lightgreen;
       font-size: 32px; /* Larger font for mobile */
     }
   }
   
   </style>
+
 
 
 
