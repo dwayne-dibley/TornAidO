@@ -8,7 +8,6 @@
     width: 10%;
     min-width: 600px;
     border-collapse: collapse;
-    font-size: 32px; /* Larger font for mobile */
   }
 
   .responsive-table th,
@@ -26,7 +25,7 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   }
 
-  /* Sticky first column */
+  /* Sticky first column and row*/
   .responsive-table th:first-child,
   .responsive-table td:first-child {
     position: sticky;
@@ -35,7 +34,14 @@
     z-index: 2; /* Ensures it stays above other content when scrolling */
   }
 
+  @media screen and (max-width: 768px) {
+    .responsive-table {
+      font-size: 32px; /* Larger font for mobile */
+    }
+  }
+  
   </style>
+
 
 
 
